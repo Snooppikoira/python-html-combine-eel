@@ -1,0 +1,179 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    border-radius: 16px;
+    font-size: 24px;
+    color: #ffffff;
+    width: calc(100% - 60px);
+    margin: 0 auto 20px auto;
+}
+
+.input-container {
+    position: relative;
+    margin: 15px auto;
+    width: calc(100% - 60px);
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.login-button {
+    width: calc(100% - 60px);
+    padding: 12px;
+    margin: 20px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    box-sizing: border-box;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+}
+
+.extra-options input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+.extra-options input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.extra-options input[type="checkbox"]:checked::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    font-size: 12px;
+}
+
+.extra-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 60px);
+    margin: 10px auto;
+}
+
+.extra-options label {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.extra-options a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.extra-options a:hover {
+    color: #ffffff;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: red;
+}
+
+.notification {
+    position: fixed;
+    top: -100px;
+    right: 20px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: top 0.5s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    top: 20px;
+}
+
+.notification i {
+    font-size: 24px;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 16px;
+}
+

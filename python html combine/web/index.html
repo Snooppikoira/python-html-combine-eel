@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python html combine</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">Login</div>
+        <div class="input-container">
+            <i class="fas fa-user input-icon"></i>
+            <input id="username" class="input-field" type="text" placeholder="Username"/>
+        </div>
+        <div class="input-container">
+            <i class="fas fa-lock input-icon"></i>
+            <input id="password" class="input-field" type="password" placeholder="Password"/>
+        </div>
+        <div class="extra-options">
+            <label>
+                <input type="checkbox"/> Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+        </div>
+        <button class="login-button" onclick="kirjaudu()">Login</button>
+        <p id="message"></p>
+        <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px; margin-top: 10px;">
+            Don't have an account? <a style="color: #ffffff;" href="#">Register</a>
+        </p>
+    </div>
+
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <p id="notification-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
